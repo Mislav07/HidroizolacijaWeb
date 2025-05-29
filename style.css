@@ -10,6 +10,11 @@ body {
 nav {
     background-color: #3366ff;
     box-shadow: 3px 3px 5px black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 nav ul{
     width: 100%;
@@ -56,6 +61,7 @@ nav li:first-child{
 .sidebar a{
     width: 100%;
 }
+
 .menu-button{
     display: none;
 }
