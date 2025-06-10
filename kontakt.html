@@ -1,70 +1,107 @@
 <!DOCTYPE html>
 <html lang="hr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Početna</title>
+    <title>Kontakt</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-
 </head>
+
 <body>
     <nav>
         <ul class="sidebar">
-            <li onclick=hideSidebar()><a href="index.html"><span class="material-symbols-outlined">close</span></a></li>
-            <li><a href="usluge.html">Usluge</a></li>
-            <li><a href="proizvodi.html">Proizvodi</a></li>
-            <li><a href="o-nama.html">O nama</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
+            <li onclick="hideSidebar()"><a href="index.html"><span class="material-symbols-outlined">close</span></a>
+            </li>
+            <li><a href="usluge.html"><span>Usluge</span></a></li>
+            <li><a href="proizvodi.html"><span>Proizvodi</span></a></li>
+            <li><a href="o-nama.html"><span>O nama</span></a></li>
+            <li><a href="kontakt.html"><span>Kontakt</span></a></li>
         </ul>
         <ul>
-            <li><a href="index.html">Početna</a></li>
-            <li class="hideOnMobile"><a href="usluge.html">Usluge</a></li>
-            <li class="hideOnMobile"><a href="proizvodi.html">Proizvodi</a></li>
-            <li class="hideOnMobile"><a href="o-nama.html">O nama</a></li>
-            <li class="hideOnMobile"><a href="kontakt.html">Kontakt</a></li>
-            <li class="menu-button" onclick=showSidebar()><a href="#"><span class="material-symbols-outlined">menu</span></a></li>
-
-            
+            <li><a href="index.html"><span>Početna</span></a></li>
+            <li class="hideOnMobile"><a href="usluge.html"><span>Usluge</span></a></li>
+            <li class="hideOnMobile"><a href="proizvodi.html"><span>Proizvodi</span></a></li>
+            <li class="hideOnMobile"><a href="o-nama.html"><span>O nama</span></a></li>
+            <li class="hideOnMobile"><a href="kontakt.html"><span>Kontakt</span></a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><span
+                        class="material-symbols-outlined">menu</span></a></li>
         </ul>
     </nav>
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Hidroizolacija Marković</h1>
-                <p>CIJELI ŽIVOT GODINA ISKUSTVA</p>
-                <a href="usluge.html" class="btn-hero">NAŠE USLUGE</a>
+
+    <main class="contact-main">
+        <section class="contact-section">
+            <h2>Kontaktirajte nas</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Kontakt podaci</h3>
+                    <p><strong>Telefon:</strong> 091 234 5678</p>
+                    <p><strong>Email:</strong> info@hidroizolacije-markovic.hr & zeljko.markovic04@gmail.com</p>
+                    <p><strong>Adresa:</strong> Samobor, Hrvatska</p>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Pošaljite nam upit</h3>
+                    <form action="mailto:info@hidroizolacije-markovic.hr" method="post" enctype="text/plain">
+                        <input type="text" name="Ime i prezime" placeholder="Vaše ime i prezime" required>
+                        <input type="email" name="Email" placeholder="Vaš email" required>
+                        <input type="tel" name="Telefon" placeholder="Broj telefona (nije obavezno)">
+                        <textarea name="Poruka" rows="5" placeholder="Vaš zahtjev ili pitanje..." required></textarea>
+                        <button type="submit">Pošalji</button>
+                    </form>
+                </div>
+            </div>
+            <div class="map-container">
+                <h3>Naša lokacija</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.7257856762074!2d15.713648215529786!3d45.80210107910696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d4fe54d0a271%3A0x6624c90fbb5f2c3c!2sSamobor!5e0!3m2!1shr!2shr!4v1614093563851!5m2!1shr!2shr"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
             </div>
         </section>
-        <section class="info-section">
-            <div class="info-box">
-                <img src="https://img.icons8.com/?size=100&id=9021&format=png&color=3366ff" alt="Ikona za usluge">
-                <h3>NAŠE USLUGE</h3>
-                <p>//usluge il nes nemam blage samo da izgleda profesionalno</p>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>Hidroizolacije Marković</h3>
+                <p>Stručnjaci za hidroizolaciju s više od 20 godina iskustva. Pouzdanost, kvaliteta i profesionalnost u
+                    svakom projektu.</p>
             </div>
-            <div class="info-box">
-                <img src="https://img.icons8.com/?size=100&id=juce4NBWYLEJ&format=png&color=3366ff" alt="Ikona ZastoMi">
-                <h3>ZAŠTO ODABRATI NAS</h3>
-                <p>//Ovdje napisemo koje materijale koristi i tehnike il neku glupost nez ni ja
-                </p>
+
+            <div class="footer-links">
+                <h4>Brzi linkovi</h4>
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="usluge.html">Usluge</a></li>
+                    <li><a href="proizvodi.html">Proizvodi</a></li>
+                    <li><a href="o-nama.html">O nama</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
             </div>
-            <div class="info-box">
-                <img src="https://img.icons8.com/?size=100&id=53428&format=png&color=3366ff" alt="Nasi Projekti">
-                <h3>NAŠI PROJEKTI</h3>
-                <p>//ovdje stavimo kao button i onda kad se klikne odvede te na podstranicu projekata</p>
+
+            <div class="footer-contact">
+                <h4>Kontakt</h4>
+                <p>📞 091 234 5678</p>
+                <p>✉️ info@hidroizolacije-markovic.hr & zeljko.markovic04@gmail.com</p>
+                <p>📍 Samobor, Hrvatska</p>
             </div>
-        </section>
-        
-    </main>    
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Hidroizolacije Marković. Sva prava pridržana.</p>
+        </div>
+    </footer>
+
     <script>
-        function showSidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display='flex'
+        function showSidebar() {
+            document.querySelector('.sidebar').style.display = 'flex';
         }
-        function hideSidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display='none'
+        function hideSidebar() {
+            document.querySelector('.sidebar').style.display = 'none';
         }
     </script>
 </body>
+
 </html>

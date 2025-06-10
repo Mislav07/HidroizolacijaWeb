@@ -79,11 +79,43 @@
                 <p class="info-text">
                     Pogledajte našu galeriju uspješno završenih projekata i uvjerite se u kvalitetu.
                 </p>
-                <a href="projekti.html" class="btn-projects">Pogledaj projekte</a>
+                <a href="o-nama.html" class="btn-projects">Pogledaj projekte</a>
             </div>
         </section>
 
     </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>Hidroizolacije Marković</h3>
+                <p>Stručnjaci za hidroizolaciju s više od 20 godina iskustva. Pouzdanost, kvaliteta i profesionalnost u
+                    svakom projektu.</p>
+            </div>
+    
+            <div class="footer-links">
+                <h4>Brzi linkovi</h4>
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="usluge.html">Usluge</a></li>
+                    <li><a href="proizvodi.html">Proizvodi</a></li>
+                    <li><a href="o-nama.html">O nama</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-contact">
+                <h4>Kontakt</h4>
+                <p>📞 091 234 5678</p>
+                <p>✉️ info@hidroizolacije-markovic.hr & zeljko.markovic04@gmail.com</p>
+                <p>📍 Samobor, Hrvatska</p>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2025 Hidroizolacije Marković. Sva prava pridržana.</p>
+        </div>
+    </footer>    
 
     <script>
         function showSidebar() {
@@ -94,6 +126,22 @@
             const sidebar = document.querySelector('.sidebar');
             sidebar.style.display = 'none';
         }
+        const heroSection = document.querySelector('.hero');
+            const backgroundImages = [
+                "WhatsApp Slika 2025-06-01 u 13.10.34_3443f011.jpg",
+                "WhatsApp Slika 2025-06-01 u 13.10.35_5954016a.jpg",
+                "WhatsApp Slika 2025-06-01 u 13.16.27_c7da84a1.jpg",
+                "WhatsApp Slika 2025-06-01 u 13.17.00_5b52b17f.jpg"
+            ]; 
+
+            let currentImageIndex = 0;
+
+            function changeBackground() {
+                currentImageIndex = (currentImageIndex + 1) % backgroundImages.length;
+                heroSection.style.backgroundImage = `url('${backgroundImages[currentImageIndex]}')`;
+            }
+
+            setInterval(changeBackground, 5000); 
     </script>
 </body>
 
