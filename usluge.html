@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usluge</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="index.html"><span class="material-symbols-outlined">close</span></a>
+            </li>
+            <li><a href="usluge.html"><span>Usluge</span></a></li>
+            <li><a href="proizvodi.html"><span>Proizvodi</span></a></li>
+            <li><a href="o-nama.html"><span>O nama</span></a></li>
+            <li><a href="kontakt.html"><span>Kontakt</span></a></li>
+        </ul>
+        <ul>
+            <li class="logo-container">
+                <a href="index.html" class="logo-link">
+                    <img src="hidroizolacije.svg" alt="Logo Hidroizolacije Marković" class="logo-img">
+                </a>
+            </li>
+            <li class="hideOnMobile"><a href="usluge.html"><span>Usluge</span></a></li>
+            <li class="hideOnMobile"><a href="proizvodi.html"><span>Proizvodi</span></a></li>
+            <li class="hideOnMobile"><a href="o-nama.html"><span>O nama</span></a></li>
+            <li class="hideOnMobile"><a href="kontakt.html"><span>Kontakt</span></a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><span
+                        class="material-symbols-outlined">menu</span></a></li>
+        </ul>
+    </nav>
+
+    <main style="padding-top: 100px; min-height: 70vh;">
+        <section class="info-section usluge-info-section">
+            <div class="info-box">
+                <h3>RAVNI KROVOVI</h3>
+                <p>
+                    Specijalizirani smo za hidroizolaciju ravnih krovova kako bismo spriječili prodiranje vode i
+                    produljili vijek trajanja objekta. Koristimo visokokvalitetne materijale i provjerene tehnologije za
+                    maksimalnu pouzdanost.
+                </p>
+            </div>
+            <div class="info-box">
+                <h3>BALKONI I TERASE</h3>
+                <p>
+                    Izvodimo precizne hidroizolacijske radove na balkonima i terasama kako bi površine bile zaštićene od
+                    vlage, pukotina i propadanja. Prilagođavamo rješenja prema tipu objekta i potrebama klijenta.
+                </p>
+            </div>
+            <div class="info-box">
+                <h3>TEMELJI</h3>
+                <p>
+                    Pravilna hidroizolacija temelja ključna je za očuvanje stabilnosti građevine. Nudimo profesionalna
+                    rješenja koja štite konstrukciju od podzemnih voda i kapilarne vlage.
+                </p>
+            </div>
+            <div class="info-box">
+                <h3>PODRUMI</h3>
+                <p>
+                    Zaštitite svoj podrum od vlage i plijesni uz naša stručna hidroizolacijska rješenja. Osiguravamo suh
+                    i siguran prostor, idealan za dugotrajnu upotrebu.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>Hidroizolacije Marković</h3>
+                <p>Stručnjaci za hidroizolaciju s više od 20 godina iskustva. Pouzdanost, kvaliteta i profesionalnost u
+                    svakom projektu.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Brzi linkovi</h4>
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="usluge.html">Usluge</a></li>
+                    <li><a href="proizvodi.html">Proizvodi</a></li>
+                    <li><a href="o-nama.html">O nama</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Kontakt</h4>
+                <p>📞 091 234 5678</p>
+                <p>✉️ info@hidroizolacije-markovic.hr & zeljko.markovic04@gmail.com</p>
+                <p>📍 Samobor, Hrvatska</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Hidroizolacije Marković. Sva prava pridržana.</p>
+        </div>
+    </footer>
+
+    <script>
+        function showSidebar() {
+            document.querySelector('.sidebar').style.display = 'flex';
+        }
+        function hideSidebar() {
+            document.querySelector('.sidebar').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>

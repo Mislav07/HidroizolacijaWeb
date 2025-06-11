@@ -389,3 +389,46 @@ nav li:first-child {
     height: 300px;
     border: none;
 }
+
+.logo-img{
+    height: auto;
+    max-height: 50px;
+    object-fit: contain;
+    padding: 10px 10px;
+    filter: brightness(0) invert(1);
+}
+
+.logo-container a span::after{
+    content: none !important;
+}
+
+.logo-container a:hover{
+    background-color: transparent;
+}
+
+.logo-container{
+    margin-right: 10px;
+}
+
+.proizvodi-info-section .info-box {
+    max-width: 450px;
+}
+
+.proizvodi-info-section .proizvodi-img {
+    max-width: 320px;
+    max-height: 320px;
+}
+
+.usluge-info-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.usluge-info-section .info-box {
+    max-width: 340px;
+    min-width: 0;
+    margin: 0 auto;
+}
