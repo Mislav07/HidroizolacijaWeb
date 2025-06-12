@@ -324,6 +324,13 @@ nav li:first-child {
     padding-top: 15px;
     font-size: 0.85rem;
 }
+.footer-contact img {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
 
 .contact-section {
     padding: 100px 20px 60px;
