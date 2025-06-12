@@ -241,7 +241,39 @@ nav li:first-child {
 .btn-projects:hover {
     background-color: #254eda;
 }
+.about-section {
+    padding: 120px 20px 60px;
+    background-color: #f9f9f9;
+}
 
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.about-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #133E87;
+    text-align: center;
+}
+
+.about-container p {
+    margin-bottom: 20px;
+}
+
+.about-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
 .site-footer {
     background-color: #133E87;
     color: #F3F3E0;
