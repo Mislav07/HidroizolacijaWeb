@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="index.html"><span class="material-symbols-outlined">close</span></a>
+            </li>
+            <li><a href="usluge.html"><span>Usluge</span></a></li>
+            <li><a href="proizvodi.html"><span>Proizvodi</span></a></li>
+            <li><a href="o-nama.html"><span>O nama</span></a></li>
+            <li><a href="kontakt.html"><span>Kontakt</span></a></li>
+        </ul>
+        <ul>
+            <li class="logo-container">
+                <a href="index.html" class="logo-link">
+                    <img src="hidroizolacije.svg" alt="Logo Hidroizolacije Marković" class="logo-img">
+                </a>
+            </li>
+            <li class="hideOnMobile"><a href="usluge.html"><span>Usluge</span></a></li>
+            <li class="hideOnMobile"><a href="proizvodi.html"><span>Proizvodi</span></a></li>
+            <li class="hideOnMobile"><a href="o-nama.html"><span>O nama</span></a></li>
+            <li class="hideOnMobile"><a href="kontakt.html"><span>Kontakt</span></a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><span
+                        class="material-symbols-outlined">menu</span></a></li>
+        </ul>
+    </nav>
+    <section class="about-section">
+        <div class="about-container">
+            <h1>O nama</h1>
+            <p><strong>HIDROIZOLACIJE MARKOVIĆ j.d.o.o</strong> je tvrtka koja se bavi izvođenjem hidroizolacijskih, sanacijskih i građevinskih radova.</p>
+
+            <p>Specijalizirani smo za hidroizolaciju u čemu imamo višegodišnje iskustvo.</p>
+
+            <p>Sve radove izvodimo s kvalitetnim i provjerenim materijalima, na svim vrstama objekata.</p>
+
+            <p>Vršimo:</p>
+            <ul class="about-list">
+                <li>Hidroizolaciju temelja</li>
+                <li>Hidroizolaciju podruma i podzemnih građevina</li>
+                <li>Hidroizolaciju balkona, terasa i stubišta</li>
+                <li>Hidroizolaciju krovova</li>
+            </ul>
+
+            <p>Klijentima nudimo individualno savjetovanje gdje pažljivo provjerimo stanje objekta, a zatim nudimo optimalno rješenje.</p>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>Hidroizolacije Marković</h3>
+                <p>Stručnjaci za hidroizolaciju s više od 20 godina iskustva. Pouzdanost, kvaliteta i profesionalnost u
+                    svakom projektu.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Brzi linkovi</h4>
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="usluge.html">Usluge</a></li>
+                    <li><a href="proizvodi.html">Proizvodi</a></li>
+                    <li><a href="o-nama.html">O nama</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Kontakt</h4>
+                <p>📞 091 234 5678</p>
+                <p>✉️ info@hidroizolacije-markovic.hr & zeljko.markovic04@gmail.com</p>
+                <p>📍 Samobor, Hrvatska</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Hidroizolacije Marković. Sva prava pridržana.</p>
+        </div>
+    </footer>
+
+    <script>
+        function showSidebar() {
+            document.querySelector('.sidebar').style.display = 'flex';
+        }
+        function hideSidebar() {
+            document.querySelector('.sidebar').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
